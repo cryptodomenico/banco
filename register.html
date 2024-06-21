@@ -1,0 +1,48 @@
+<style>
+    #grad1 {
+    padding:120px;
+  height: 1000px;
+  background-color: blue; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to left top, red, rgb(0, 0, 255)); 
+align-items: center ;
+margin: auto;
+justify-content: center;
+width: 50%;
+text-align: center;
+}
+</style>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Modulo registrazione</title>
+</head>
+<body id="grad1" style="text-align: center;">
+    <div class="register">
+        <h1>Modulo Registrazione</h1>
+        <form action="register.php" method="post" autocomplete="off">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" placeholder="Nome" id="nome" required>
+            <br>
+            <br>
+            <label for="cognome">Cognome:</label>
+            <input type="text" name="cognome" placeholder="Cognome" id="cognome" required>
+            <br>
+            <br>
+            <label for="email">Username:</label>
+            <input type="text" name="username" placeholder="Username" id="username" required>
+            <br>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" name="password" placeholder="Password" id="password" required>
+            <br>
+            <br>
+            <input type="submit" value="Register">
+            <br>
+        </form>
+    </div>
+    <div>Gi&agrave registrato?
+<a href="login.html" style="color: white;">Login</a>
+</div>
+</body>
+</html>
